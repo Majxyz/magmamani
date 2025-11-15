@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Antipolo City</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="main-header">
+        <nav>
+            <a class="logo" href="#hero">Antipoleños</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Antipolo</h1>
+                <p class="hero-subtitle">Experience the culture, nature, and breathtaking views of the City of Antipolo</p>
+                <a href="#destinations" class="btn-explore">Explore Now</a>
+            </div>
+        </section>
+
+        <section id="destinations">
+            <div class="container">
+                <h2 class="section-title">Must-Visit Destinations</h2>
+                <p class="section-subtitle">Discover the beauty and culture of Antipolo through these amazing attractions</p>
+                
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="hinulugan-taktak.png" alt="Hinulugang Taktak Falls" class="destination-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Hinulugang Taktak Falls</h3>
+                            <p>Experience the natural beauty of this historic waterfall, perfect for nature lovers and photography enthusiasts.</p>
+                            <a href="#" class="card-btn" data-id="hinulugang-taktak" aria-haspopup="dialog">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="pintobackground.jpg" alt="Pinto Art Museum" class="destination-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Pinto Art Museum</h3>
+                            <p>Immerse yourself in contemporary Filipino art in this beautiful museum surrounded by lush gardens.</p>
+                            <a href="#" class="card-btn" data-id="pinto-art-museum" aria-haspopup="dialog">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="outsidecatheral.jpg" alt="Antipolo Cathedral" class="destination-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Antipolo Cathedral</h3>
+                            <p>Visit the National Shrine of Our Lady of Peace and Good Voyage, a significant religious landmark.</p>
+                            <a href="#" class="card-btn" data-id="antipolo-cathedral" aria-haspopup="dialog">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="cloud9.MAIN.jpg" class="destination-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Cloud 9</h3>
+                            <p>Enjoy panoramic views of Metro Manila from this popular viewpoint with thrilling hanging bridge.</p>
+                            <a href="#" class="card-btn" data-id="cloud-9" aria-haspopup="dialog">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="mountpurromainpage.jpg" alt="Mount Purro Nature Reserve" class="destination-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Mount Purro Nature Reserve</h3>
+                            <p>Discover pristine nature and eco-tourism activities in this beautiful mountain reserve with hiking trails and wildlife.</p>
+                            <a href="#" class="card-btn" data-id="mount-purro" aria-haspopup="dialog">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery of Antipolo's Beauty</h2>
+                <p class="section-subtitle">Discover the stunning landscapes, cultural spots, and hidden gems that make Antipolo a must-visit destination.</p>
+                
+                <!-- Tourist Attraction Gallery Component -->
+   <div class="attractions-gallery">
+    <!-- Card 1: Pinto Art Museum -->
+    <div class="attraction-card" data-attraction="pinto-art-museum">
+        <div class="card-header">
+            <h3 class="attraction-title">Pinto Art Museum</h3>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <img src="pintoartmuseummain.jpg" alt="Pinto Art Museum exterior" class="gallery-image active">
+                    <img src="pintobackground.jpg" alt="Pinto Art Museum garden view" class="gallery-image">
+                    <img src="pintobackground1.1.jpg" alt="Pinto Art Museum interior" class="gallery-image">
+                    <img src="pintobackground1.2.jpg" alt="Pinto Art Museum art pieces" class="gallery-image">
+                </div>
+
+                <button class="gallery-nav prev-btn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="gallery-nav next-btn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pagination-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to image 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to image 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to image 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to image 4"></button>
+            </div>
+        </div>
+
+        <div class="category">Art Gallery</div>
+        <p class="attraction-description">
+            Immerse yourself in contemporary Filipino art in this beautiful museum surrounded by lush gardens and modern architecture.
+        </p>
+    </div>
+
+    <!-- Card 2: Hinulugang Taktak Falls -->
+    <div class="attraction-card" data-attraction="hinulugang-taktak">
+        <div class="card-header">
+            <h3 class="attraction-title">Hinulugang Taktak Falls</h3>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <img src="hinulugan-taktak.png" alt="Hinulugang Taktak Falls main view" class="gallery-image active">
+                    <img src="hinulugantaktak1.jpg" alt="Hinulugang Taktak Falls from below" class="gallery-image">
+                    <img src="hinulugangtaktak2.jpg" alt="Hinulugang Taktak Falls detail" class="gallery-image">
+                    <img src="hinulugangtaktak3.jpg" alt="Hinulugang Taktak Falls detail" class="gallery-image">
+                </div>
+
+                <button class="gallery-nav prev-btn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="gallery-nav next-btn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pagination-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to image 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to image 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to image 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to image 4"></button>
+            </div>
+        </div>
+
+        <div class="category">Nature &amp; Parks</div>
+        <p class="attraction-description">
+            Experience the natural beauty of this historic waterfall, perfect for nature lovers and photography enthusiasts.
+        </p>
+    </div>
+
+    <!-- Card 3: Mount Purro Nature Reserve -->
+    <div class="attraction-card" data-attraction="mount-purro-nature-reserve">
+        <div class="card-header">
+            <h3 class="attraction-title">Mount Purro Nature Reserve</h3>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <img src="mountpurromainpage.jpg" alt="Mount Purro Nature Reserve main view" class="gallery-image active">
+                    <img src="mountpurrobg1.jpg" alt="Mount Purro hiking trails" class="gallery-image">
+                    <img src="mountpurrobg2.jpg" alt="Mount Purro wildlife and nature" class="gallery-image">
+                    <img src="mountpurrobg4.jpg" alt="Mount Purro eco-tourism activities" class="gallery-image">
+                </div>
+
+                <button class="gallery-nav prev-btn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="gallery-nav next-btn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pagination-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to image 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to image 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to image 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to image 4"></button>
+            </div>
+        </div>
+
+        <div class="category">Eco-Tourism</div>
+        <p class="attraction-description">
+            Discover pristine nature and eco-tourism activities in this beautiful mountain reserve with hiking trails, wildlife viewing, and sustainable tourism practices.
+        </p>
+    </div>
+
+    <!-- Card 4: Antipolo Cathedral -->
+    <div class="attraction-card" data-attraction="antipolo-cathedral">
+        <div class="card-header">
+            <h3 class="attraction-title">Antipolo Cathedral</h3>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <img src="antipolo cathedra1l.jpg" alt="Antipolo Cathedral exterior" class="gallery-image active">
+                    <img src="main-altar-chatedral.jpg" alt="Antipolo Cathedral interior" class="gallery-image">
+                    <img src="inside-cathedral.jpg"Antipolo Cathedral plaza" class="gallery-image">
+                    <img src="insidesecond-cathedral.jpg" alt="Antipolo Cathedral religious art" class="gallery-image">
+                </div>
+
+                <button class="gallery-nav prev-btn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="gallery-nav next-btn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pagination-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to image 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to image 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to image 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to image 4"></button>
+            </div>
+        </div>
+
+        <div class="category">Historic Landmark</div>
+        <p class="attraction-description">
+            Visit this iconic pilgrimage site, known for its rich history, Spanish-era architecture, and the revered image of Our Lady of Peace and Good Voyage.
+        </p>
+    </div>
+
+    <!-- Card 5: Cloud 9 -->
+    <div class="attraction-card" data-attraction="cloud-9">
+        <div class="card-header">
+            <h3 class="attraction-title">Cloud 9</h3>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <img src="cloud9.MAIN.jpg" alt="Cloud 9 resort exterior" class="gallery-image active">
+                    <img src="cloud9bg1.JPG" alt="Cloud 9 scenic view" class="gallery-image">
+                    <img src="cloud9bg2.JPG" alt="Cloud 9 mountain landscape" class="gallery-image">
+                    <img src="cloud9bg.JPG" alt="Cloud 9 facilities" class="gallery-image">
+                </div>
+
+                <button class="gallery-nav prev-btn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="gallery-nav next-btn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="pagination-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to image 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to image 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to image 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to image 4"></button>
+            </div>
+        </div>
+
+        <div class="category">Mountain Resort</div>
+        <p class="attraction-description">
+            Experience breathtaking panoramic views above the clouds at this stunning mountain resort, perfect for relaxation, sunrise watching, and unforgettable memories.
+        </p>
+    </div>
+</div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn">&times;</span>
+                <img class="lightbox-img" src="" alt="Enlarged image">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Magtataho_69. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="info-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close details">&times;</button>
+            <h2 class="modal-title"></h2>
+            <img class="modal-image" src="" alt="" style="display:none;">
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    
+    <!-- Choice Modal for Learn More -->
+    <div id="choice-modal" class="choice-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="choice-modal">
+            <button class="choice-modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="choice-modal-title">Choose an Option</h2>
+            <div class="choice-modal-options">
+                <button class="choice-btn location" data-action="location">Check Location</button>
+                <button class="choice-btn story" data-action="story">Story of this Spot</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
